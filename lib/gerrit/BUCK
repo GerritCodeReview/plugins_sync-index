@@ -1,0 +1,24 @@
+include_defs('//bucklets/maven_jar.bucklet')
+
+VER = '2.13-SNAPSHOT'
+REPO = MAVEN_LOCAL
+
+# To be able to successfully compile this plugin against master, this open
+# change [1] needs to be cherry-picked.
+# [1] https://gerrit-review.googlesource.com/#/c/72607/
+
+maven_jar(
+  name = 'acceptance-framework',
+  id = 'com.google.gerrit:gerrit-acceptance-framework:' + VER,
+  license = 'Apache2.0',
+  attach_source = False,
+  repository = REPO,
+)
+
+maven_jar(
+  name = 'plugin-api',
+  id = 'com.google.gerrit:gerrit-plugin-api:' + VER,
+  license = 'Apache2.0',
+  attach_source = False,
+  repository = REPO,
+)
