@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b43efe47_60adf2a7",
+        "filename": "src/test/java/com/ericsson/gerrit/plugins/syncindex/HttpClientProviderTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2016-01-26T13:59:06Z",
+      "side": 1,
+      "message": "Extra blank line?",
+      "revId": "a997fb3838ee38773a392cd39c346bb4b6b9d9d3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d437f269_e1bfc6c9",
+        "filename": "src/test/java/com/ericsson/gerrit/plugins/syncindex/IndexEventHandlerTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2016-01-26T13:59:06Z",
+      "side": 1,
+      "message": "Would wrap this a bit differently so String.format is not split.",
+      "range": {
+        "startLine": 84,
+        "startChar": 47,
+        "endLine": 84,
+        "endChar": 53
+      },
+      "revId": "a997fb3838ee38773a392cd39c346bb4b6b9d9d3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
