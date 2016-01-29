@@ -46,6 +46,30 @@
       "revId": "08675a8df3f3b710c9a140f6aff2d6a4ea9a030a",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "146eeab0_f3be70cb",
+        "filename": "src/main/java/com/ericsson/gerrit/plugins/syncindex/SyncIndexRestApiServlet.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1022287
+      },
+      "writtenOn": "2016-01-29T01:47:52Z",
+      "side": 1,
+      "message": "Thanks for your reply and reminder.",
+      "parentUuid": "1426ea4f_73aaa092",
+      "range": {
+        "startLine": 113,
+        "startChar": 45,
+        "endLine": 113,
+        "endChar": 46
+      },
+      "revId": "08675a8df3f3b710c9a140f6aff2d6a4ea9a030a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
