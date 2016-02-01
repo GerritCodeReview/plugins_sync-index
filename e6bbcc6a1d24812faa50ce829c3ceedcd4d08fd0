@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b1dc50fe_10a2c4bb",
+        "filename": ".gitignore",
+        "patchSetId": 6
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2016-02-01T14:12:22Z",
+      "side": 1,
+      "message": "out/",
+      "range": {
+        "startLine": 8,
+        "startChar": 9,
+        "endLine": 8,
+        "endChar": 12
+      },
+      "revId": "e6bbcc6a1d24812faa50ce829c3ceedcd4d08fd0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b1dc50fe_709d507c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2016-02-01T14:12:22Z",
+      "side": 1,
+      "message": "Broken line wraps above.",
+      "revId": "e6bbcc6a1d24812faa50ce829c3ceedcd4d08fd0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
