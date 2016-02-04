@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "51895439_6dc05556",
+        "filename": ".gitignore",
+        "patchSetId": 6
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2016-02-04T15:11:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b1dc50fe_10a2c4bb",
+      "range": {
+        "startLine": 8,
+        "startChar": 9,
+        "endLine": 8,
+        "endChar": 12
+      },
+      "revId": "e6bbcc6a1d24812faa50ce829c3ceedcd4d08fd0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b1dc50fe_709d507c",
         "filename": "/COMMIT_MSG",
         "patchSetId": 6
@@ -36,6 +60,24 @@
       "writtenOn": "2016-02-01T14:12:22Z",
       "side": 1,
       "message": "Broken line wraps above.",
+      "revId": "e6bbcc6a1d24812faa50ce829c3ceedcd4d08fd0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "51895439_4dbb99dc",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1012732
+      },
+      "writtenOn": "2016-02-04T15:11:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b1dc50fe_709d507c",
       "revId": "e6bbcc6a1d24812faa50ce829c3ceedcd4d08fd0",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
