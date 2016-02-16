@@ -95,8 +95,7 @@ class HttpClientProvider implements Provider<CloseableHttpClient> {
       @Override
       public boolean retryRequest(IOException exception, int executionCount,
           HttpContext context) {
-        if (executionCount > cfg.getMaxTries()
-            || exception instanceof SSLException) {
+        if (executionCount > cfg.getMaxTries() || exception instanceof SSLException) {
           return false;
         }
         logRetry(exception.getMessage());
