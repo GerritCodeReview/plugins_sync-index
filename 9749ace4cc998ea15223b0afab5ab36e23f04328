@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5d1a4804_b7f58836",
+        "filename": ".buckconfig",
+        "patchSetId": 9
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1019328
+      },
+      "writtenOn": "2016-02-16T19:56:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7d654c95_0851c751",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 29
+      },
+      "revId": "9749ace4cc998ea15223b0afab5ab36e23f04328",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7d654c95_68440391",
         "filename": ".buckconfig",
         "patchSetId": 9
@@ -36,6 +60,30 @@
       "writtenOn": "2016-02-16T19:45:48Z",
       "side": 1,
       "message": "Add eclipse-out here, like in Gerrit core? This is how this section looks in core:\n\n  [project]\n    ignore \u003d .git, eclipse-out\n    parallel_parsing \u003d true\n\nThis project has two Buck files, so it makes sense to parallelize ;-)",
+      "range": {
+        "startLine": 10,
+        "startChar": 2,
+        "endLine": 10,
+        "endChar": 15
+      },
+      "revId": "9749ace4cc998ea15223b0afab5ab36e23f04328",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5d688870_47ab2ea0",
+        "filename": ".buckconfig",
+        "patchSetId": 9
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1019328
+      },
+      "writtenOn": "2016-02-16T19:56:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7d654c95_68440391",
       "range": {
         "startLine": 10,
         "startChar": 2,
