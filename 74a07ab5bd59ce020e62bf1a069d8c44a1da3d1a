@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ceae84f9_52ad94a9",
+        "filename": "lib/gerrit/BUCK",
+        "patchSetId": 13
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1020422
+      },
+      "writtenOn": "2016-04-08T04:18:47Z",
+      "side": 1,
+      "message": "It is better to specify which revision this plugin is based on\nby comment like \nVER \u003d \u00272.13-SNAPSHOT\u0027  // revision 6ed0958 \n\nwithout it other like me easyly run into issue like: \nxxx/sync-index/src/main/java/com/ericsson/gerrit/plugins/syncindex/SyncIndexRestApiServlet.java:23: error: cannot find symbol\nimport com.google.gerrit.server.index.ChangeIndexer;\n                                     ^\n  symbol:   class ChangeIndexer\n  location: package com.google.gerrit.server.index\n/Users/brucezu/Documents/sync-index/src/main/java/com/ericsson/gerrit/plugins/syncindex/SyncIndexRestApiServlet.java:46: error: cannot find symbol\n  private final ChangeIndexer indexer;\n                ^\n  symbol:   class ChangeIndexer\n  location: class com.ericsson.gerrit.plugins.syncindex.SyncIndexRestApiServlet\n/Users/brucezu/Documents/sync-index/src/main/java/com/ericsson/gerrit/plugins/syncindex/SyncIndexRestApiServlet.java:50: error: cannot find symbol\n  SyncIndexRestApiServlet(ChangeIndexer indexer,\n                          ^\n  symbol:   class ChangeIndexer\n  location: class com.ericsson.gerrit.plugins.syncindex.SyncIndexRestApiServlet\nErrors: 3. Warnings: 0.",
+      "revId": "74a07ab5bd59ce020e62bf1a069d8c44a1da3d1a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ae0cf0ee_39a6efd3",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 13
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1020422
+      },
+      "writtenOn": "2016-04-08T04:18:47Z",
+      "side": 1,
+      "message": "r/plugin/@PLUGIN@/",
+      "revId": "74a07ab5bd59ce020e62bf1a069d8c44a1da3d1a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
