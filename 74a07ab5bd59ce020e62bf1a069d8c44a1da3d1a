@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ae0cf0ee_f9b477f8",
+        "filename": "lib/gerrit/BUCK",
+        "patchSetId": 13
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1020422
+      },
+      "writtenOn": "2016-04-08T04:34:48Z",
+      "side": 1,
+      "message": "VER \u003d \u00272.13-SNAPSHOT\u0027  // revision 5fbbdad",
+      "parentUuid": "ceae84f9_52ad94a9",
+      "revId": "74a07ab5bd59ce020e62bf1a069d8c44a1da3d1a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ae0cf0ee_39a6efd3",
         "filename": "src/main/resources/Documentation/build.md",
         "patchSetId": 13
