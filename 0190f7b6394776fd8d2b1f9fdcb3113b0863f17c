@@ -22,6 +22,30 @@
       "revId": "0190f7b6394776fd8d2b1f9fdcb3113b0863f17c",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "97682aa0_79a7a7ba",
+        "filename": "src/main/java/com/ericsson/gerrit/plugins/syncindex/SyncIndexRestApiServlet.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1019328
+      },
+      "writtenOn": "2016-05-20T10:50:59Z",
+      "side": 1,
+      "message": "In fact, an earlier version used one. We came back to the manually synchronized hashMap because we wanted to synchronize also the retrieval operations, which is not always guaranteed by the concurrent version.",
+      "parentUuid": "77d1f68b_28c98b6c",
+      "range": {
+        "startLine": 120,
+        "startChar": 4,
+        "endLine": 120,
+        "endChar": 32
+      },
+      "revId": "0190f7b6394776fd8d2b1f9fdcb3113b0863f17c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
