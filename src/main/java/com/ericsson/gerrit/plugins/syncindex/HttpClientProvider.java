@@ -38,7 +38,6 @@ import org.apache.http.protocol.HttpContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
 import java.net.URI;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
@@ -90,24 +89,19 @@ class HttpClientProvider implements Provider<CloseableHttpClient> {
   }
 
   private HttpRequestRetryHandler customRetryHandler() {
-    return new HttpRequestRetryHandler() {
-
-      @Override
-      public boolean retryRequest(IOException exception, int executionCount,
-          HttpContext context) {
-        if (executionCount > cfg.getMaxTries()
-            || exception instanceof SSLException) {
-          return false;
-        }
-        logRetry(exception.getMessage());
-        try {
-          Thread.sleep(cfg.getRetryInterval());
-        } catch (InterruptedException e) {
-          Thread.currentThread().interrupt();
-          return false;
-        }
-        return true;
+    return (exception, executionCount, context) -> {
+      if (executionCount > cfg.getMaxTries()
+          || exception instanceof SSLException) {
+        return false;
       }
+      logRetry(exception.getMessage());
+      try {
+        Thread.sleep(cfg.getRetryInterval());
+      } catch (InterruptedException e) {
+        Thread.currentThread().interrupt();
+        return false;
+      }
+      return true;
     };
   }
 
