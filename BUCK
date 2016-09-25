@@ -49,8 +49,8 @@ java_test(
 
 maven_jar(
   name = 'wiremock',
-  id = 'com.github.tomakehurst:wiremock:1.58:standalone',
-  sha1 = '21c8386a95c5dc54a9c55839c5a95083e42412ae',
+  id = 'com.github.tomakehurst:wiremock-standalone:2.1.12',
+  sha1 = 'fee73e0913ff3801cf83e660a14d6e4aac9a9cbd',
   license = 'Apache2.0',
   attach_source = False,
 )
