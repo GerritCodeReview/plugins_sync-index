@@ -38,6 +38,7 @@ import org.apache.http.protocol.HttpContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.net.URI;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
@@ -76,7 +77,23 @@ class HttpClientProvider implements Provider<CloseableHttpClient> {
         .setConnectionManager(customConnectionManager())
         .setDefaultCredentialsProvider(buildCredentials())
         .setDefaultRequestConfig(customRequestConfig())
-        .setRetryHandler(customRetryHandler())
+        .setRetryHandler(new HttpRequestRetryHandler() {
+	    @Override
+	    public boolean retryRequest(IOException exception, int executionCount, HttpContext context) {
+              if (executionCount > cfg.getMaxTries()
+                  || exception instanceof SSLException) {
+                return false;
+              }
+              logRetry(exception.getMessage());
+              try {
+                Thread.sleep(cfg.getRetryInterval());
+              } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                return false;
+              }
+              return true;
+            }
+        })
         .setServiceUnavailableRetryStrategy(customServiceUnavailRetryStrategy())
         .build();
   }
@@ -88,6 +105,7 @@ class HttpClientProvider implements Provider<CloseableHttpClient> {
         .build();
   }
 
+  /* TODO(davido): Clarify why are we seeing compiler breakage on this lambda
   private HttpRequestRetryHandler customRetryHandler() {
     return (exception, executionCount, context) -> {
       if (executionCount > cfg.getMaxTries()
@@ -104,6 +122,7 @@ class HttpClientProvider implements Provider<CloseableHttpClient> {
       return true;
     };
   }
+  */
 
   private ServiceUnavailableRetryStrategy customServiceUnavailRetryStrategy() {
     return new ServiceUnavailableRetryStrategy() {
