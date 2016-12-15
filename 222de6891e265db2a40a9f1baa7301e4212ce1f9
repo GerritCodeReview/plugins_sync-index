@@ -16,6 +16,24 @@
       "revId": "222de6891e265db2a40a9f1baa7301e4212ce1f9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bad8d7b0_4acdd348",
+        "filename": "BUILD",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1019328
+      },
+      "writtenOn": "2016-12-15T19:38:05Z",
+      "side": 1,
+      "message": "When I include this, I get the Stackoverflow error...",
+      "parentUuid": "fa132f0f_34a4308b",
+      "revId": "222de6891e265db2a40a9f1baa7301e4212ce1f9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
