@@ -1,7 +1,7 @@
 Build
 =====
 
-This plugin is built with Buck.
+This plugin can be built with Bazel or Buck.
 
 Two build modes are supported: Standalone and in Gerrit tree. Standalone
 build mode is recommended, as this mode doesn't require local Gerrit
@@ -10,6 +10,33 @@ tree to exist.
 Build standalone
 ----------------
 
+### Bazel
+
+To build the plugin, issue the following command:
+
+```
+  bazel build @PLUGIN@
+```
+
+The output is created in
+
+```
+  bazel-genfiles/@PLUGIN@.jar
+```
+
+To execute the tests run:
+
+```
+  bazel test sync_index_tests
+```
+
+This project can be imported into the Eclipse IDE:
+
+```
+  ./tools/eclipse.py
+```
+
+### Buck
 Clone bucklets library:
 
 ```
@@ -73,6 +100,43 @@ The output is created in:
 Build in Gerrit tree
 --------------------
 
+### Bazel
+Clone or link this plugin to the plugins directory of Gerrit's source
+tree, and issue the command:
+
+```
+  bazel build plugins/@PLUGIN@
+```
+
+The output is created in
+
+```
+  bazel-genfiles/plugins/@PLUGIN@/@PLUGIN@.jar
+```
+
+This project can be imported into the Eclipse IDE. List the plugin in the
+custom plugin list, in `gerrit/tools/bzl/plugins.bzl`:
+
+```
+CUSTOM_PLUGINS = [
+  [...]
+  '@PLUGIN@',
+]
+```
+
+and issue the command:
+
+```
+  ./tools/eclipse/project_bzl.py
+```
+
+To execute the tests run:
+
+```
+  bazel test plugins/@PLUGIN@:sync_index_tests
+```
+
+### Buck
 Clone or link this plugin to the plugins directory of Gerrit's source
 tree, and issue the command:
 
