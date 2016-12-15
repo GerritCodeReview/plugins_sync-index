@@ -34,6 +34,47 @@
       "revId": "222de6891e265db2a40a9f1baa7301e4212ce1f9",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a1ba32a_15ac946a",
+        "filename": "BUILD",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-12-15T21:05:33Z",
+      "side": 1,
+      "message": "There are 3 independent issues here:\n\n* 1. the buld of this plugin is broken already in Buck to start with. You include in provided_deps acceptance-plugin-framework. This is ugly hack and only works because httpclient is included in gerrit.war in the firs place. The correct fix for that is expose httpclient in plugin API. Will upload a fix in a moment.\n* 2. javax.http.* is missing in plugin-api in Bazel. This is a bug. Will upload a fix in a moment.\n* 3. Stackoverflow error: this is Bazel or Java compiler bug. and is caused by this lambda method implementation:\n\n   /*\n  private HttpRequestRetryHandler customRetryHandler() {\n    return (exception, executionCount, context) -\u003e {\n      if (executionCount \u003e cfg.getMaxTries()\n          || exception instanceof SSLException) {\n        return false;\n      }\n      logRetry(exception.getMessage());\n      try {\n        Thread.sleep(cfg.getRetryInterval());\n      } catch (InterruptedException e) {\n        Thread.currentThread().interrupt();\n        return false;\n      }\n      return true;\n    };\n  }\n  */",
+      "parentUuid": "bad8d7b0_4acdd348",
+      "revId": "222de6891e265db2a40a9f1baa7301e4212ce1f9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa132f0f_549bac4c",
+        "filename": "WORKSPACE",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-12-15T21:05:33Z",
+      "side": 1,
+      "message": "Where bazlets are loaded?",
+      "range": {
+        "startLine": 2,
+        "startChar": 24,
+        "endLine": 2,
+        "endChar": 36
+      },
+      "revId": "222de6891e265db2a40a9f1baa7301e4212ce1f9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
