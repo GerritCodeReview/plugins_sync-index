@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa132f0f_34a4308b",
+        "filename": "BUILD",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-12-15T19:36:18Z",
+      "side": 1,
+      "message": "Why it\u0027s not included?",
+      "revId": "222de6891e265db2a40a9f1baa7301e4212ce1f9",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
