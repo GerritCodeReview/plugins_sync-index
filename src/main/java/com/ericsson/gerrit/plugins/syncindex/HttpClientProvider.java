@@ -76,7 +76,7 @@ class HttpClientProvider implements Provider<CloseableHttpClient> {
         .setConnectionManager(customConnectionManager())
         .setDefaultCredentialsProvider(buildCredentials())
         .setDefaultRequestConfig(customRequestConfig())
-        .setRetryHandler(customRetryHandler())
+        //.setRetryHandler(customRetryHandler())
         .setServiceUnavailableRetryStrategy(customServiceUnavailRetryStrategy())
         .build();
   }
@@ -88,6 +88,7 @@ class HttpClientProvider implements Provider<CloseableHttpClient> {
         .build();
   }
 
+  /*
   private HttpRequestRetryHandler customRetryHandler() {
     return (exception, executionCount, context) -> {
       if (executionCount > cfg.getMaxTries()
@@ -104,6 +105,7 @@ class HttpClientProvider implements Provider<CloseableHttpClient> {
       return true;
     };
   }
+  */
 
   private ServiceUnavailableRetryStrategy customServiceUnavailRetryStrategy() {
     return new ServiceUnavailableRetryStrategy() {
