@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa132f0f_b4e160ba",
+        "filename": "src/main/java/com/ericsson/gerrit/plugins/syncindex/HttpClientProvider.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-12-15T21:53:56Z",
+      "side": 1,
+      "message": "Tabs.",
+      "revId": "a7c4d892e8cbb2f7e194cef906466f944792dff1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a1ba32a_75d068e0",
+        "filename": "src/main/java/com/ericsson/gerrit/plugins/syncindex/HttpClientProvider.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-12-15T21:53:56Z",
+      "side": 1,
+      "message": "long line.",
+      "range": {
+        "startLine": 82,
+        "startChar": 5,
+        "endLine": 82,
+        "endChar": 97
+      },
+      "revId": "a7c4d892e8cbb2f7e194cef906466f944792dff1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
