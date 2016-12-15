@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa132f0f_d4c97c4b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-12-15T21:28:00Z",
+      "side": 1,
+      "message": "It builds for me with this series in place: [1] and publishing the API with `tools/maven/api.sh install bazel`:\n\n  $ bazel build sync-index\n  INFO: Found 1 target...\n  INFO: From Building deploy jar sync- \n  index__non_stamped_deploy.jar:\n  Target //:sync-index up-to-date:\n  bazel-genfiles/sync-index.jar\n  INFO: Elapsed time: 0.560s, Critical Path: 0.32s\n\nThe artifact content is sane: [2].\n\n* [1] https://gerrit-review.googlesource.com/#/c/93154\n* [2] http://pastebin.com/Q0mRpdw1",
+      "revId": "dcf45d2f29ab72bffe127a312b7eed1a3c183ff8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a1ba32a_b5e160ba",
+        "filename": "src/main/java/com/ericsson/gerrit/plugins/syncindex/HttpClientProvider.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-12-15T21:28:00Z",
+      "side": 1,
+      "message": "It worth extract a minimal reproducer for this breakage (own GitHub repro) an open an issue on Bazel issue tracker.",
+      "revId": "dcf45d2f29ab72bffe127a312b7eed1a3c183ff8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
