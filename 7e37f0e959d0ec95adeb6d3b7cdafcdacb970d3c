@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a1ba32a_35d6f0de",
+        "filename": "src/main/java/com/ericsson/gerrit/plugins/syncindex/HttpClientProvider.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-12-15T21:49:46Z",
+      "side": 1,
+      "message": "Trailing spaces, tabs.",
+      "revId": "7e37f0e959d0ec95adeb6d3b7cdafcdacb970d3c",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
