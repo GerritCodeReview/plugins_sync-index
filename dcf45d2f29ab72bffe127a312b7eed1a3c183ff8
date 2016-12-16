@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "bad8d7b0_8a9eabf0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1019328
+      },
+      "writtenOn": "2016-12-16T10:23:18Z",
+      "side": 1,
+      "message": "Still not working for me. Followed instructions:\n* Checkout [1]\n* bazel build gerrit-plugin-api:plugin-api_deploy.jar\n* tools/maven/api.sh install bazel\n* Checkout latest patch set for this change\n* bazel clean\n* bazel build sync-index\nStill see the http errors [2]\n\n[1] https://gerrit-review.googlesource.com/#/c/93154\n[2] http://pastebin.com/WepmwJZf\n\nI should be doing something stupid but still haven\u0027t figured out what it is :(",
+      "parentUuid": "fa132f0f_d4c97c4b",
+      "revId": "dcf45d2f29ab72bffe127a312b7eed1a3c183ff8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a1ba32a_95e6e4cd",
         "filename": "BUILD",
         "patchSetId": 3
