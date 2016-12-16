@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "1a1ba32a_7534e837",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-12-16T12:10:36Z",
+      "side": 1,
+      "message": "That\u0027s because of stale plugin-api, responsible by download_file.py cache. You need to remove previously cached 2.14-SNAPSHOT artifacts with:\n\n  $ rm $HOME/.gerritcodereview/buck-cache/downloaded-artifacts/gerrit-plugin*\n\nSorry, that I missed to mention it, thought it was clear.",
+      "parentUuid": "bad8d7b0_8a9eabf0",
+      "revId": "dcf45d2f29ab72bffe127a312b7eed1a3c183ff8",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a1ba32a_95e6e4cd",
         "filename": "BUILD",
         "patchSetId": 3
