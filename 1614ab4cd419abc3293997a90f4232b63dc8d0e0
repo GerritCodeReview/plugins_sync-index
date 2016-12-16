@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa132f0f_74bfc85d",
+        "filename": "src/test/java/com/ericsson/gerrit/plugins/syncindex/IndexEventHandlerTest.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-12-16T15:46:56Z",
+      "side": 1,
+      "message": "M-x untabify",
+      "range": {
+        "startLine": 118,
+        "startChar": 0,
+        "endLine": 118,
+        "endChar": 4
+      },
+      "revId": "1614ab4cd419abc3293997a90f4232b63dc8d0e0",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
