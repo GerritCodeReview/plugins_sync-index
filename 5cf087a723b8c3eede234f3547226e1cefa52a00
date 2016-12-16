@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a1ba32a_b5c7a0ff",
+        "filename": "src/main/java/com/ericsson/gerrit/plugins/syncindex/HttpClientProvider.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-12-16T13:56:41Z",
+      "side": 1,
+      "message": "it is probably cleaner to still use a method to create this handler.",
+      "range": {
+        "startLine": 80,
+        "startChar": 25,
+        "endLine": 97,
+        "endChar": 10
+      },
+      "revId": "5cf087a723b8c3eede234f3547226e1cefa52a00",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
