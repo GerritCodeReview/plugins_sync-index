@@ -116,8 +116,9 @@ public class IndexEventHandlerTest extends EasyMockSupport {
   public void testSyncIndexTaskHashCodeAndEquals() {
     SyncIndexTask task = indexEventHandler.new SyncIndexTask(CHANGE_ID, false);
 
-    assertThat(task.equals(task)).isTrue();
-    assertThat(task.hashCode()).isEqualTo(task.hashCode());
+    SyncIndexTask sameTask = task;
+    assertThat(task.equals(sameTask)).isTrue();
+    assertThat(task.hashCode()).isEqualTo(sameTask.hashCode());
 
     SyncIndexTask identicalTask =
         indexEventHandler.new SyncIndexTask(CHANGE_ID, false);
