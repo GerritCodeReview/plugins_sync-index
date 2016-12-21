@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a1ba32a_984a99c7",
+        "filename": "src/main/resources/Documentation/build.md",
+        "patchSetId": 21
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-12-21T14:22:00Z",
+      "side": 1,
+      "message": "Mention here, that the source JAR can be built with:\n\n  bazel build libsync-index__plugin-src.jar\n\n?",
+      "revId": "9a522ae36d90ff17fb8bfbc3b51fb47616b180ee",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
