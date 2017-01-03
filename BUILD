@@ -26,6 +26,9 @@ junit_tests(
     tags = ["sync-index", "local"],
     deps = PLUGIN_DEPS + PLUGIN_TEST_DEPS + [
         "@wiremock//jar",
+        "@mockito//jar",
+        "@byte-buddy//jar",
+        "@objenesis//jar",
         ":sync-index__plugin",
     ],
 )

@@ -7,7 +7,7 @@ RESOURCES = glob(['src/main/resources/**/*'])
 
 TEST_DEPS = GERRIT_PLUGIN_API + GERRIT_TESTS + [
   ':sync-index__plugin',
-  ':wiremock',
+  ':mockito',
 ]
 
 gerrit_plugin(
@@ -47,5 +47,32 @@ maven_jar(
   id = 'com.github.tomakehurst:wiremock-standalone:2.1.12',
   sha1 = 'fee73e0913ff3801cf83e660a14d6e4aac9a9cbd',
   license = 'Apache2.0',
+  attach_source = False,
+)
+
+maven_jar(
+  name = 'mockito',
+  id = 'org.mockito:mockito-core:2.5.0',
+  sha1 = 'be28d46a52c7f2563580adeca350145e9ce916f8',
+  license = 'MIT',
+  deps = [
+    ':byte-buddy',
+    ':objenesis',
+  ],
+)
+
+maven_jar(
+  name = 'byte-buddy',
+  id = 'net.bytebuddy:byte-buddy:1.5.12',
+  sha1 = 'b1ba1d15f102b36ed43b826488114678d6d413da',
+  license = 'DO_NOT_DISTRIBUTE',
+  attach_source = False,
+)
+
+maven_jar(
+  name = 'objenesis',
+  id = 'org.objenesis:objenesis:2.4',
+  sha1 = '2916b6c96b50c5b3ec4452ed99401db745aabb27',
+  license = 'DO_NOT_DISTRIBUTE',
   attach_source = False,
 )

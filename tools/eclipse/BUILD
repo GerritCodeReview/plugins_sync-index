@@ -8,6 +8,9 @@ java_library(
   name = "classpath",
     runtime_deps = PLUGIN_DEPS + PLUGIN_TEST_DEPS + [
       "@wiremock//jar",
+      "@mockito//jar",
+      "@byte-buddy//jar",
+      "@objenesis//jar",
       "//:sync-index__plugin",
     ],
 )
@@ -16,6 +19,9 @@ classpath_collector(
   name = "main_classpath_collect",
   deps = PLUGIN_DEPS + PLUGIN_TEST_DEPS + [
     "@wiremock//jar",
+    "@mockito//jar",
+    "@byte-buddy//jar",
+    "@objenesis//jar",
     "//:sync-index__plugin"
   ],
 )
