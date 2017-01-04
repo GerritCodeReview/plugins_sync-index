@@ -11,6 +11,7 @@ DEPS = [
 
 TEST_DEPS = GERRIT_PLUGIN_API + GERRIT_TESTS + DEPS + [
   ':sync-index__plugin',
+  ':wiremock',
   ':mockito',
 ]
 
