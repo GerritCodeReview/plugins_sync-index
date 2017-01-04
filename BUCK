@@ -7,6 +7,7 @@ RESOURCES = glob(['src/main/resources/**/*'])
 
 TEST_DEPS = GERRIT_PLUGIN_API + GERRIT_TESTS + [
   ':sync-index__plugin',
+  ':wiremock',
   ':mockito',
 ]
 
