@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da490b80_80ad3f25",
+        "filename": "WORKSPACE.in_gerrit_tree",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2017-01-26T18:28:26Z",
+      "side": 1,
+      "message": "This can be simplified now, see: [1], [2].\n\n* [1] https://gerrit-review.googlesource.com/#/c/95375/\n* [2] https://gerrit-review.googlesource.com/#/c/95294/",
+      "revId": "8402a6f1cca2c4f738701226ce594c42f7da2eb3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
