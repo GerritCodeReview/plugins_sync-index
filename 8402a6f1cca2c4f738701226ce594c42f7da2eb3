@@ -34,6 +34,47 @@
       "revId": "8402a6f1cca2c4f738701226ce594c42f7da2eb3",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e9c67cbe_5353c949",
+        "filename": "WORKSPACE.in_gerrit_tree",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2017-01-31T14:25:22Z",
+      "side": 1,
+      "message": "Yes, you are right. In Gerrit tree mode, this is controlled in tools/eclipse/BUILD file. We already adding there CUSTOM_PLUGINS to make Eclipse generation work for custom plugins: [1]. What we could do, is to define one single dependency per plugin for tests as well, and call ist \u003cplugin\u003e_test_utils.\n\n  To achieve what you want, the steps would be:\n\n* 1. Extend CUSTOM_PLUGIN_TEST_UTILS \u003d [] in gerrit in the file:\n\n  https://github.com/gerrit-review/gerrit/blob/master/tools/bzl/plugins.bzl#L10-L12\n\nto be:\n\n  CUSTOM_PLUGIN_TEST_UTILS  \u003d [\"sync-index\"]\n\n* 2. Every plugin that adds additional test dependencies, would define this rule, in your your case, something like (with or without sources, depends on plugin use case)\n\n  java_library(\n    name \u003d \"sync-index_test_utils\",\n    runtime_deps \u003d [@wiremock//jar],\n  )\n\n* 3. Add another loop in [2] to main class path collector:\n\n  +\n  [\"//plugins/%s:%s_test_tuils\" % (n, n) for n in CUSTOM_PLUGIN_TEST_UTILS],\n\nNow in tree build should generated entries for additional test dependencies.\n\n* [1] https://github.com/gerrit-review/gerrit/blob/master/tools/eclipse/BUILD#L58\n* [2] https://github.com/gerrit-review/gerrit/blob/master/tools/eclipse/BUILD#L58",
+      "parentUuid": "74e56d1f_acccee46",
+      "revId": "8402a6f1cca2c4f738701226ce594c42f7da2eb3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f1785ef_505cb77d",
+        "filename": "tools/eclipse/BUILD",
+        "patchSetId": 22
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2017-01-31T14:25:22Z",
+      "side": 1,
+      "message": "@Hector, the dependencies added to the class path in standalone build mode should be controlled by this rule. And, evidently, @wiremock//jar\" was adding here. So I would expect, that the resulting Eclipse project would include the additional test dependencies as well. Are they really missing?",
+      "range": {
+        "startLine": 18,
+        "startChar": 4,
+        "endLine": 18,
+        "endChar": 21
+      },
+      "revId": "8402a6f1cca2c4f738701226ce594c42f7da2eb3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
