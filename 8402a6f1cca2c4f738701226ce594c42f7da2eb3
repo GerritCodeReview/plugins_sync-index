@@ -16,6 +16,24 @@
       "revId": "8402a6f1cca2c4f738701226ce594c42f7da2eb3",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "74e56d1f_acccee46",
+        "filename": "WORKSPACE.in_gerrit_tree",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1019328
+      },
+      "writtenOn": "2017-01-31T13:48:51Z",
+      "side": 1,
+      "message": "Thanks for the links. The limitation we see here is the fact that when generating the Eclipse workspace, these dependencies are not added to the classpath. That was also the case when building with Buck in tree. Given we have added some other test dependencies to this plugin that are not in Gerrit, this limitation is getting a bit worse.",
+      "parentUuid": "da490b80_80ad3f25",
+      "revId": "8402a6f1cca2c4f738701226ce594c42f7da2eb3",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
