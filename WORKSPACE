@@ -2,7 +2,7 @@ workspace(name = "sync_index")
 load("//:bazlets.bzl", "load_bazlets")
 
 load_bazlets(
-    commit = "8a4cbdc993f41fcfe7290e7d1007cfedf8d87c18",
+    commit = "cb66cc0c8e11fcdc848c4606f1f1ef3354649155",
     #local_path = "/home/davido/projects/bazlets",
 )
 
