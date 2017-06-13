@@ -41,7 +41,6 @@ class SyncIndexExecutorProvider implements Provider<Executor>,
   @Override
   public void stop() {
     executor.shutdown();
-    executor.unregisterWorkQueue();
     executor = null;
   }
 
