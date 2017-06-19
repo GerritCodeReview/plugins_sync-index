@@ -1,6 +1,0 @@
-
-maven_jar(
-    name = "wiremock",
-    artifact = "com.github.tomakehurst:wiremock-standalone:2.4.1",
-    sha1 = "228d3047147fffa0f12771f5dc2b3cd3b38c454b",
-)
